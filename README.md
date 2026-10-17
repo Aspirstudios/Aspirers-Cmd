@@ -8,10 +8,7 @@
 
 <br>
 
-<img src="https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python" alt="Python">
-<img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=flat-square&logo=windows" alt="Platform">
-<img src="https://img.shields.io/badge/Release-v1.0.0-informational?style=flat-square" alt="Release">
-<img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
+<img src="https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python" alt="Python"> <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=flat-square&logo=windows" alt="Platform"><img src="https://img.shields.io/badge/Release-v1.0.0-informational?style=flat-square" alt="Release"> <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
 
 ---
 
@@ -78,3 +75,48 @@ If you want to modify the code, add new commands to the dictionary, or tweak the
 1. Clone the repository:
    ```bash
    git clone https://github.com/Aspirstudios/Aspirers-Cmd.git
+
+   
+---
+
+### 2. Release Notes (For the GitHub Release Tab)
+
+Copy and paste this into the description box when you create your Release:
+
+```markdown
+# AspirersCMD v1.0.0
+
+**The Intelligent Windows Terminal.**
+
+---
+
+Welcome to the very first official release of **AspirersCMD**. 
+
+Forget everything you know about the classic, clunky Command Prompt. This release brings a sleek, dark-themed interface, real-time context-aware autocompletion, and zero-latency system profiling to your daily workflow, all while maintaining the classic CMD window size.
+
+### What's New in v1.0.0?
+
+*   **Context-Aware Autocomplete:** Type `ipconfig /` and watch the terminal instantly suggest flags like `/all` or `/flushdns`. Navigate with <kbd>Up</kbd>/<kbd>Down</kbd> and autocomplete with <kbd>Tab</kbd>.
+*   **Asynchronous Profiling:** The app opens instantly. Background threads fetch your CPU, RAM, and Network data, displaying it cleanly on the right side of the splash screen.
+*   **True CMD Emulation:** 
+    *   **Locked Cursor:** You cannot edit or delete previous commands.
+    *   **Silent Execution:** No annoying black CMD windows flashing on your screen.
+
+---
+
+### How to Install
+
+1. Download the **`AspirersCMD.exe`** file attached below.
+2. Put it in any folder you like (e.g., your Desktop).
+3. Double-click to run. No Python installation required.
+
+> **Windows Defender Notice:**  
+> Because this executable is compiled using PyInstaller and does not have an expensive corporate digital signature, Windows SmartScreen might show a warning saying *"Windows protected your PC"*. 
+> **This is a standard false positive.** Simply click on **"More info"** and then **"Run anyway"**.
+
+---
+
+**Built With:** Python 3, Tkinter, Threading, Subprocess.
+**License:** MIT.
+
+*Developed by Bruno  (Aspir Studio). If you like the project, consider giving it a star on the repository.*
