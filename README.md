@@ -1,88 +1,76 @@
 <div align="center">
-  <h1>⌨️ AspirersCMD</h1>
+  <h1><code>AspirersCMD</code></h1>
   <p><b>The Intelligent Windows Terminal. Reimagined.</b></p>
 
   <a href="https://github.com/Aspirstudios/Aspirers-Cmd/releases">
-    <img src="https://img.shields.io/badge/Download-AspirersCMD.exe-success?style=for-the-badge&logo=windows" alt="Download EXE">
+    <img src="https://img.shields.io/badge/⬇_Download-AspirersCMD.exe-00ff00?style=for-the-badge&logo=windows&logoColor=white&labelColor=000000" alt="Download EXE">
   </a>
   <br><br>
-  <img src="https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=flat-square&logo=windows" alt="Platform">
-  <img src="https://img.shields.io/badge/Release-v1.0.0-informational?style=flat-square" alt="Release">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Platform">
+  <img src="https://img.shields.io/badge/License-MIT-00ff00?style=flat-square&labelColor=000000" alt="License">
 </div>
 
----
+<br>
 
-**AspirersCMD** is a standalone Windows executable (`.exe`) that completely reinvents the classic Command Prompt. It bridges the gap between a traditional shell and a modern IDE by introducing a powerful, context-aware autocompletion engine. 
+> **AspirersCMD** is a standalone Windows executable (`.exe`) that completely reinvents the classic Command Prompt. It bridges the gap between a traditional shell and a modern IDE by introducing a powerful, context-aware autocompletion engine.
 
-Gone are the days of memorizing obscure command flags or syntax. AspirersCMD brings a "Minecraft-style" or VS Code-like experience to the Windows CLI, wrapped in a sleek, dark-themed, hacker-inspired interface.
-
-## 📸 Preview
-
-*(Add a screenshot or a GIF of your terminal here! People love seeing the UI in action. Just drag and drop an image right into this file on GitHub).*
+Gone are the days of memorizing obscure command flags. AspirersCMD brings a "Minecraft-style" experience to the Windows CLI, wrapped in a sleek, dark-themed, hacker-inspired interface.
 
 ---
 
-## ✨ Why AspirersCMD?
+## ⚡ Core Features
 
-### 🧠 Context-Aware Autocompletion (The Core)
-This isn't just a simple text search. The engine analyzes the syntax of your command in real-time.
-*   **Command Prediction:** Type `net` and it immediately suggests `user`, `share`, `start`, `stop`, or `use`.
-*   **Flag/Parameter Prediction:** Type `ipconfig /` and the engine knows you need flags, instantly suggesting `/all`, `/release`, `/renew`, or `/flushdns`.
-*   **Smart Floating UI:** The suggestion box calculates the cursor's absolute position on your screen and dynamically chooses to render *above* or *below* your text. It will never be cut off by the window edge.
+### 🧠 Context-Aware Autocompletion
+The engine analyzes your command syntax in real-time. It doesn't just guess the first word.
+*   Type `net` ➔ Suggests `user`, `share`, `start`.
+*   Type `ipconfig /` ➔ Suggests `/all`, `/release`, `/flushdns`.
+*   **Controls:** Navigate suggestions with <kbd>↑</kbd> / <kbd>↓</kbd> and autocomplete with <kbd>Tab</kbd>.
+*   **Smart Floating UI:** The suggestion box calculates the cursor's absolute position and renders *above* or *below* your text so it never gets cut off.
 
 ### ⚡ Asynchronous System Profiling
-You don't have to wait for the terminal to load. 
-*   The UI appears instantly.
-*   In the background, invisible threads silently execute `wmic` and `ipconfig /all`.
-*   It extracts your CPU model, RAM size, OS build, IPv4, MAC address, and Gateway.
-*   The data is seamlessly injected into the ASCII splash screen without freezing the interface for a single millisecond.
-
-### 🎨 Generative ASCII Splash Screen
-Instead of a boring text dump, AspirersCMD greets you with a mathematically generated, 3D-like ASCII art logo. The characters are color-graded (using Tkinter text tags) to simulate lighting and depth, and the layout adapts dynamically to your window size.
+The UI appears instantly. While you type, background threads silently execute `wmic` and `ipconfig /all` to extract your CPU, RAM, OS build, MAC address, and Gateway. The data is seamlessly injected into the splash screen without freezing the interface.
 
 ### 🛡️ True CMD Emulation
-*   **Locked Cursor:** You cannot click back and edit or delete previous commands. The cursor is strictly locked to the active prompt line.
-*   **Native History:** Use the `↑` and `↓` arrow keys to cycle through your previously executed commands, just like in a real terminal.
-*   **Silent Execution:** Commands are executed using Python's `subprocess` module with hidden window flags (`creationflags`), completely preventing ugly black CMD windows from flashing on your screen.
+*   **Locked Cursor:** You cannot click back and edit previous commands.
+*   **Native History:** Use <kbd>↑</kbd> and <kbd>↓</kbd> to cycle through executed commands.
+*   **Silent Execution:** Uses `subprocess` with hidden window flags so no ugly black CMD windows flash on your screen.
 
 ---
 
-## 🚀 Quick Start (For End Users)
+## 🚀 Quick Start
 
-Since this project is compiled into a portable executable, **you do not need to install Python to use it.**
+> [!IMPORTANT]  
+> **You do not need Python installed to run this.** It is a portable `.exe`.
 
-1. Go to the **[Releases](https://github.com/Aspirstudios/Aspirers-Cmd/releases)** tab on the right side of this GitHub repository.
+1. Go to the **[Releases](https://github.com/Aspirstudios/Aspirers-Cmd/releases)** tab.
 2. Download the latest `AspirersCMD.exe`.
-3. Double-click to run. 
+3. Double-click to run.
 
-> ⚠️ **Note on Windows Defender / SmartScreen:**
-> Because the `.exe` is compiled with PyInstaller and lacks an expensive corporate digital signature, Windows Defender or SmartScreen might flag it as an unknown application. **This is a standard false positive.** 
-> Click **"More info"** and then **"Run anyway"** to launch the terminal.
+> [!WARNING]  
+> **Windows Defender / SmartScreen Warning:**  
+> Because the `.exe` is compiled with PyInstaller and lacks an expensive corporate digital signature, Windows might flag it as an unknown app. **This is a standard false positive.** Click **"More info"** ➔ **"Run anyway"**.
 
 ---
 
 ## 🕹️ Usage Guide
 
-Using AspirersCMD feels like a cheat code for Windows. Here is how to master it:
-
-1. **Just start typing:** Let's say you want to check your IP configuration. Just type `ipc`.
-2. **Autocomplete:** A green suggestion box appears. Press `Tab` to auto-complete it to `ipconfig`.
-3. **Add Flags:** Type a space and a forward slash: `ipconfig /`. The box appears again with `/all` and `/flushdns`. Press `Tab` to select, then `Enter` to execute.
-4. **Navigate History:** Press `↑` to recall your last command.
+1. Start typing a command, e.g., `ipc`.
+2. A box appears. Press <kbd>Tab</kbd> to auto-complete it to `ipconfig`.
+3. Type a space and a forward slash: `ipconfig /`.
+4. The box appears again with `/all` and `/flushdns`. Press <kbd>Tab</kbd> to select.
+5. Hit <kbd>Enter</kbd> to execute.
 
 ---
 
-## 💻 Building from Source (For Developers)
+<details>
+<summary><b>💻 Click here to see Developer / Build Instructions</b></summary>
+<br>
 
-If you want to modify the code, add new commands to the dictionary, or tweak the aesthetics, follow these steps:
+**Prerequisites:** Python 3.8+
 
-### Prerequisites
-*   **Python 3.8+**
-*   No external libraries required! (Uses standard `tkinter`, `subprocess`, `threading`, `os`, `sys`, `re`).
-
-### Run Locally
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Aspirstudios/Aspirers-Cmd.git
+**Run Locally:**
+```bash
+git clone https://github.com/Aspirstudios/Aspirers-Cmd.git
+cd Aspirers-Cmd
+python main.py
