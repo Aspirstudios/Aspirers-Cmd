@@ -2,7 +2,7 @@
   <h1>⌨️ AspirersCMD</h1>
   <p><b>The Intelligent Windows Terminal. Reimagined.</b></p>
 
-  <a href="https://github.com/yourusername/AspirersCMD/releases">
+  <a href="https://github.com/Aspirstudios/Aspirers-Cmd/releases">
     <img src="https://img.shields.io/badge/Download-AspirersCMD.exe-success?style=for-the-badge&logo=windows" alt="Download EXE">
   </a>
   <br><br>
@@ -53,7 +53,7 @@ Instead of a boring text dump, AspirersCMD greets you with a mathematically gene
 
 Since this project is compiled into a portable executable, **you do not need to install Python to use it.**
 
-1. Go to the **[Releases]** tab on the right side of this GitHub repository.
+1. Go to the **[Releases](https://github.com/Aspirstudios/Aspirers-Cmd/releases)** tab on the right side of this GitHub repository.
 2. Download the latest `AspirersCMD.exe`.
 3. Double-click to run. 
 
@@ -85,4 +85,4 @@ If you want to modify the code, add new commands to the dictionary, or tweak the
 ### Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/AspirersCMD.git
+   git clone https://github.com/Aspirstudios/Aspirers-Cmd.git
